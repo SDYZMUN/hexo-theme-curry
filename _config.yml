@@ -5,7 +5,7 @@ menu:
 
 
 # Content
-title: 'Title'
+title: ' | 邵东一中 模拟联合国 - SDYZMUN'
 excerpt_link: 全文...
 fancybox: false
 date_format: ' YYYY 年 MM 月 DD 日'
@@ -36,5 +36,5 @@ disqus_shortname:
 # Miscellaneous
 google_analytics:
 gauges_analytics:
-favicon: favicon.ico
-avatar: avatar.png
+favicon: https://sdyzmun.club/favicon.ico
+avatar: https://sdyzmun.club/res/mun-logo.png
