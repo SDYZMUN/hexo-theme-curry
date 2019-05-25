@@ -12,18 +12,24 @@ avatar-size = 4rem
 }
 
 .avatar {
-  width: avatar-size
-  height: avatar-size
-  background-color: #fff;
-  display: flex;
+  width: avatar-size;
+  height: avatar-size;
+  display: inline-flex;
+  position: relative;
   align-items: center;
   justify-content: center;
+  background-color: #fff;
   outline: 3px solid #fff;
   outline-offset: -3px;
 
+  a{
+    width: avatar-size;
+    height: avatar-size;
+  }  
   img {
-    width: 100%
-    height: 100%
+    width: avatar-size;
+    height: avatar-size;
+    margin: auto
   }
 }
 

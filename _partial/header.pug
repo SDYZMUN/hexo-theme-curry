@@ -2,11 +2,12 @@ header.container#header
   .header
     .header-left
       .avatar
-        img(src=theme.avatar)
+          a(href="/")
+            img(src=theme.avatar)
       .author
         div.author-name
-          a(href="/")=theme.author
-        div.about-me=theme.aboutme
+          a(href="/")=config.author
+        div.about-me=config.description
 
     .header-right
       ul.navigation
@@ -14,4 +15,3 @@ header.container#header
           li
             a(href=link)=text
             
-    include ./aboutme.pug

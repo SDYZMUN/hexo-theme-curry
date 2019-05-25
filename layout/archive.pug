@@ -17,7 +17,7 @@ block content
               .post-archive
                 //- a(href=url_for(post.path))
                 .post-archive__content
-                  .post-archive__month= time(post.date, 'MM月')
+                  .post-archive__month= time(post.date, 'MM 月')
                   .post-archive__body
                     a.post-archive__title(href=url_for(post.path))= post.title
                     .post-archive__excerpt

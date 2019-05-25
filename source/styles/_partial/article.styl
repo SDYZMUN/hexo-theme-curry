@@ -1,15 +1,16 @@
 .post
   padding: 0
 
-.slide-hide
-  height 0
-  transition all 1s ease-in-out
+.hide
+  @media mq-mobile {
+    height 0
+  }
 
 .article {
   background-color: color-article-background
   padding 1.6 * gutter-size
   position: relative
-  margin-bottom gutter-size * 4
+  margin-bottom gutter-size
 
   @media mq-mobile {
     padding 2 * gutter-size
@@ -23,6 +24,11 @@
     &:hover {
       box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07)
     }
+  }
+
+  .caption {
+    color: grey
+    font-size: 0.8 * gutter-size
   }
 
   img {
@@ -103,7 +109,6 @@
 
   li {
     line-height: 2rem
-    margin-bottom gutter-size
     margin-left gutter-size
     padding-left .2rem
     color color-link
@@ -144,9 +149,11 @@
     display none
 
 .content
+  margin 1rem 0
+  
   p
     line-height 2rem
-    margin 2rem 0
+    margin 1.2rem 0
     @media mq-mobile
       font-size: gutter-size
 
@@ -155,13 +162,13 @@
   h1, h2, h3, h4, h5, h6
     font-weight bold
     line-height line-height-title
-    margin line-height-title 0
+    margin 1rem 0
 
   h1
-    font-size 22px
+    font-size 32px
 
   h2
-    font-size 20px
+    font-size 24px
 
   h3
     font-size 18px

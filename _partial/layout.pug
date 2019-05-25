@@ -8,7 +8,7 @@ html
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
 
     -var title = page.title
-    title= title ? title : theme.title
+    title= title ? title + theme.title : config.title
     if theme.favicon
       link(rel="shortcut icon", href=theme.favicon, type="image/x-icon")
     link(href="/styles/site.css", rel="stylesheet")

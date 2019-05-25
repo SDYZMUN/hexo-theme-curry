@@ -43,20 +43,6 @@
     }
   });
 
-  // Avatar
-  var $mask = $('.about-me-mask');
-  $('.avatar').on('click', function () {
-    if (!$mask.hasClass('open')) {
-      $mask.addClass('open');
-    }
-  });
-
-  $mask.on('click', function (e) {
-    if (e.target.classList.contains('about-me-mask')) {
-      $mask.removeClass('open');
-    }
-  });
-
   // Back to top
   var $backToTop = $('#backToTop');
   $(document).on('scroll', function () {
